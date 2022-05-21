@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  /* текст */
+  --main-text: "Roboto", sans-serif;
+  --logo-text: "Raleway", sans-serif;
+  /* цвета текста */
+  --main-text-color: #212121;
+  --acsent-cololr: #2196f3;
+  --main-text-grey: #757575;
+  --main-light: #ffffff;
+
+  /* цвета фона */
+  --background-dark: #2f303a;
+  --background-light: #e5e5e5;
+  --background-grey: #f5f4fa;
+}
+
+a {
+  text-decoration: none;
+  font-style: normal;
+}
+body {
+  font-family: var(--main-text);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  width: 1600px;
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+/* основной цвет #212121 */
+/* вторичний цвет #757575 */
+/* белий основ #FFFFFF */
+/* основ голуб #2196F3 */
+/* вторичние цвет фона #2F303A */
+
+.shapka {
+  display: inline-flex;
+  background-color: var(--main-light);
+  text-decoration: none;
+}
+/* навигатор сайта */
+
+/*логотип*/
+.shapka .loga {
+  padding: 25px 0 24px 215px;
+  color: var(--main-text-color);
+  font-family: var(--logo-text);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.page .loga-web {
+  color: var(--acsent-cololr);
+}
+.nav {
+  font-weight: 500;
+}
+
+/* site-nav */
+.site-nav .link {
+  color: #212121;
+  padding-left: 50px;
+}
+
+.list-site.studia {
+  padding-left: 93px;
+}
+/* контакти */
+.cotacts.list {
+  display: inline-flex;
+  padding-left: 438px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+}
+
+.site-nav {
+  display: inline-flex;
+  width: 294px;
+  padding-top: 32px;
+  padding-bottom: 52px;
+}
+.list-site .link:hover,
+.list-site .link:focus,
+.list-site .link:active {
+  color: var(--acsent-cololr);
+}
+
+.mail a {
+  color: #757575;
+}
+.mail .link:hover,
+.mail .link:focus {
+  color: var(--acsent-cololr);
+}
+/* .mail .link:focus {
+  col or: var(--main-text-color);
+} */
+.tel .link {
+  padding-left: 50px;
+  padding-right: 215px;
+  color: var(--main-text-grey);
+}
+
+
+
+
+.footer {
+  background-color: var(--background-dark);
+  height: 132px;
+  padding: 60px 0 60px 215px;
+}
+.loga-footer {
+  font-family: var(--logo-text);
+  color: var(--main-light);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.address-googl a {
+  color: var(--main-light);
+}
+.footer-address a {
+  color: rgba(255, 255, 255, 0.6);
+}
+.address {
+  padding-top: 20px;
+
+  line-height: 1.71;
+}

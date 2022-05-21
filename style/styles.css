@@ -1,5 +1,8 @@
 /* перемение сайта*/
-
+* {
+  margin: 0;
+  padding: 0;
+}
 :root {
   /* текст */
   --main-text: "Roboto", sans-serif;
@@ -15,13 +18,9 @@
   --background-light: #e5e5e5;
   --background-grey: #f5f4fa;
 }
-* {
-  margin: 0;
-  padding: 0;
-}
+
 a {
   text-decoration: none;
-
   font-style: normal;
 }
 body {
@@ -29,7 +28,6 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
-  background-color: orangered;
   width: 1600px;
   text-decoration: none;
 }
@@ -270,4 +268,8 @@ body {
   padding-top: 20px;
 
   line-height: 1.71;
+}
+/* portfolio */
+.section-result {
+  display: flexbox;
 }

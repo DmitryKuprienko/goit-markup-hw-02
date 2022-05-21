@@ -1,0 +1,84 @@
+/* перемение сайта*/
+:root {
+  /* текст */
+  --main-text: "Roboto", sans-serif;
+  --logo-text: "Raleway", sans-serif;
+  /* цвета текста */
+  --main-text-color: #212121;
+  --acsent-cololr: #2196f3;
+  --main-text-grey: #757575;
+  --main-light: #ffffff;
+
+  /* цвета фона */
+  --background-dark: #2f303a;
+  --background-light: #e5e5e5;
+  --background-grey: #f5f4fa;
+}
+
+.page {
+  font-family: var(--main-text);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+}
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+/* основной цвет #212121 */
+/* вторичний цвет #757575 */
+/* белий основ #FFFFFF */
+/* основ голуб #2196F3 */
+/* вторичние цвет фона #2F303A */
+
+.shapka {
+  display: inline-flex;
+  background-color: var(--background-light);
+  text-decoration: none;
+}
+/* навигатор сайта */
+
+/*логотип*/
+.shapka .loga {
+  margin: 0;
+  padding: 25px 0 24px 215px;
+  color: var(--main-text-color);
+  font-family: var(--logo-text);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.shapka .loga-web {
+  color: #2196f3;
+}
+.nav {
+  font-weight: 500;
+}
+
+/* site-nav */
+.site-nav .link {
+  color: #212121;
+  padding: 32px 0 32px 50px;
+}
+
+.cotacts {
+  display: inline-flex;
+  padding-left: 0;
+}
+
+.site-nav {
+  display: inline-flex;
+  width: 294px;
+}
+.mail {
+  margin-left: 331px;
+}
+.tel {
+  margin-left: 50px;
+}

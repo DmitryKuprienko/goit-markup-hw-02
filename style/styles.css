@@ -1,4 +1,5 @@
 /* перемение сайта*/
+
 :root {
   /* текст */
   --main-text: "Roboto", sans-serif;
@@ -14,14 +15,22 @@
   --background-light: #e5e5e5;
   --background-grey: #f5f4fa;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
 
-.page {
+  font-style: normal;
+}
+body {
   font-family: var(--main-text);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
-}
-.link {
+  background-color: orangered;
+  width: 1600px;
   text-decoration: none;
 }
 
@@ -37,25 +46,23 @@
 
 .shapka {
   display: inline-flex;
-  background-color: var(--background-light);
+  background-color: var(--main-light);
   text-decoration: none;
 }
 /* навигатор сайта */
 
 /*логотип*/
 .shapka .loga {
-  margin: 0;
   padding: 25px 0 24px 215px;
   color: var(--main-text-color);
   font-family: var(--logo-text);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
 }
 
-.shapka .loga-web {
-  color: #2196f3;
+.page .loga-web {
+  color: var(--acsent-cololr);
 }
 .nav {
   font-weight: 500;
@@ -64,21 +71,203 @@
 /* site-nav */
 .site-nav .link {
   color: #212121;
-  padding: 32px 0 32px 50px;
+  padding-left: 50px;
 }
 
-.cotacts {
+.list-site.studia {
+  padding-left: 93px;
+}
+/* контакти */
+.cotacts.list {
   display: inline-flex;
-  padding-left: 0;
+  padding-left: 438px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
 }
 
 .site-nav {
   display: inline-flex;
   width: 294px;
+  padding-top: 32px;
+  padding-bottom: 52px;
 }
-.mail {
-  margin-left: 331px;
+.list-site .link:hover,
+.list-site .link:focus,
+.list-site .link:active {
+  color: var(--acsent-cololr);
 }
-.tel {
-  margin-left: 50px;
+
+.mail a {
+  color: #757575;
+}
+.mail .link:hover,
+.mail .link:focus {
+  color: var(--acsent-cololr);
+}
+/* .mail .link:focus {
+  col or: var(--main-text-color);
+} */
+.tel .link {
+  padding-left: 50px;
+  padding-right: 215px;
+  color: var(--main-text-grey);
+}
+/* section 1 */
+.section {
+  background: var(--background-light);
+}
+.section.main {
+  background-color: var(--background-dark);
+  height: 600px;
+}
+.section .titleh1 {
+  width: 696px;
+  height: 120px;
+  text-align: center;
+}
+.main .title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--main-light);
+  padding: 200px 452px 40px 452px;
+}
+
+.main .btr {
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  margin-left: 700px;
+  font-family: var(--main-text);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--main-light);
+  background: var(--acsent-cololr);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+/* особености услуг */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.description {
+  display: inline-flex;
+  width: 1170px;
+  height: 101px;
+  padding: 94px 215px;
+}
+
+.description .title {
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-right: 30px;
+}
+.disc-text {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--main-text-grey);
+  padding-right: 30px;
+  width: 270px;
+  height: 75px;
+}
+
+/* чем занимаемся */
+.titeleh2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.what-doing {
+  text-align: center;
+  background-color: var(--background-light);
+}
+.what-doing .list {
+  display: flex;
+  padding-left: 215px;
+  padding-right: 215px;
+  padding-bottom: 94px;
+}
+.imeges {
+  width: 370px;
+  height: 294px;
+}
+.imeges.fron {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+/* Наша команда */
+.section.team {
+  background-color: var(--background-grey);
+}
+.team.titeleh2 {
+  padding-top: 94px;
+}
+.list.team {
+  display: flex;
+  padding: 0 215px 94px 215px;
+}
+
+.team-imeges {
+  height: 260px;
+}
+.team-img {
+  width: 270px;
+  height: 368px;
+  padding-right: 30px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.19;
+  background-color: var(--main-light);
+}
+
+.team-titel {
+  font-weight: 500;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  color: var(--main-text-color);
+}
+.team-text {
+  color: var(--main-text-grey);
+  padding-bottom: 30px;
+}
+/* footer */
+.footer {
+  background-color: var(--background-dark);
+  height: 132px;
+  padding: 60px 0 60px 215px;
+}
+.loga-footer {
+  font-family: var(--logo-text);
+  color: var(--main-light);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.address-googl a {
+  color: var(--main-light);
+}
+.footer-address a {
+  color: rgba(255, 255, 255, 0.6);
+}
+.address {
+  padding-top: 20px;
+
+  line-height: 1.71;
 }

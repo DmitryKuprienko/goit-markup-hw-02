@@ -24,11 +24,26 @@ a {
 }
 body {
   font-family: var(--main-text);
+  color: var(--main-text-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
   width: 1600px;
+
   text-decoration: none;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .list {
@@ -99,7 +114,9 @@ body {
   color: #757575;
 }
 .mail .link:hover,
-.mail .link:focus {
+.mail .link:focus,
+.tel .link:hover,
+.tel .link:focus {
   color: var(--acsent-cololr);
 }
 /* .mail .link:focus {
@@ -111,9 +128,71 @@ body {
   color: var(--main-text-grey);
 }
 
+/* portfolio */
+.section {
+  background-color: var(--background-light);
+}
 
+.button {
+  text-align: center;
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+.btr {
+  font-family: var(--main-text);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  border: 0;
+  background: var(--background-grey);
+  border-radius: 4px;
+  padding: 6px 22px;
+}
+.btr:hover,
+.btr:focus,
+.btr:active {
+  background: var(--acsent-cololr);
+  color: var(--main-light);
+}
+.section.main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1170px;
+  height: 1360px;
+  padding-left: 215px;
+}
+.section-blok {
+  width: 370px;
+  height: 404px;
+  margin-right: 30px;
 
+  background-color: var(--main-light);
+}
 
+.section-imeg {
+  height: 294px;
+}
+/* заголовки */
+.extreme {
+  margin-right: 0;
+}
+.headlines {
+  width: 322px;
+  font-size: 18px;
+  line-height: 2;
+  padding-left: 24px;
+  padding-top: 20px;
+}
+/* text */
+.section-text {
+  width: 322px;
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--main-text-grey);
+  padding-left: 24px;
+}
+
+/* footet */
 .footer {
   background-color: var(--background-dark);
   height: 132px;

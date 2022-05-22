@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style/styles.css" />
+    <link rel="stylesheet" href="./style/portfolio.css" />
   </head>
   <body class="page">
     <!--верхняя линия-->
@@ -23,10 +23,10 @@
         </a>
         <ul class="site-nav list">
           <li class="list-site studia">
-            <a href="./index.html" class="link">Студия</a>
+            <a href="index.html" class="link">Студия</a>
           </li>
           <li class="list-site">
-            <a href="./portfolio.html" class="link">Портфолио</a>
+            <a href="portfolio.html" class="link">Портфолио</a>
           </li>
           <li class="list-site"><a href="" class="link">Kонтакты</a></li>
         </ul>
@@ -44,58 +44,85 @@
       </ul>
     </header>
 
-    <section>
-      <h1>portfolio</h1>
-      <button typy="button">Все</button>
-      <button typy="button">Веб-сайты</button>
-      <button typy="button">Приложения</button>
-      <button typy="button">Дизайн</button>
-      <button typy="button">Маркетинг</button>
-      <ul class="section-result">
-        <li>
-          <img src="./images/site1.jpg" alt="site page" />
-          <h2>Технокряк</h2>
-          <p>Веб-сайт</p>
+    <section class="section">
+      <h1 class="visually-hidden">portfolio</h1>
+      <div class="button">
+        <button typy="button" class="btr">Все</button>
+        <button typy="button" class="btr">Веб-сайты</button>
+        <button typy="button" class="btr">Приложения</button>
+        <button typy="button" class="btr">Дизайн</button>
+        <button typy="button" class="btr">Маркетинг</button>
+      </div>
+
+      <ul class="section main list">
+        <li class="section-blok">
+          <img class="section-imeg" src="./images/site1.jpg" alt="site page" />
+          <h2 class="headlines">Технокряк</h2>
+          <p class="section-text">Веб-сайт</p>
         </li>
-        <li>
-          <img src="./images/basketball2.jpg" alt="two basketball players" />
-          <h2>Постер <span lang="en">New Orlean vs Golden Star</span></h2>
-          <p>Дизайн</p>
+        <li class="section-blok">
+          <img
+            class="section-imeg"
+            src="./images/basketball2.jpg"
+            alt="two basketball players"
+          />
+          <h2 class="headlines">
+            Постер <span lang="en">New Orlean vs Golden Star</span>
+          </h2>
+          <p class="section-text">Дизайн</p>
         </li>
-        <li>
-          <img src="./images/fish3.jpg" alt="fish restaurant logo" />
-          <h2>Ресторан <span lang="en">Seafood</span></h2>
-          <p>Приложение</p>
+        <li class="section-blok extreme">
+          <img
+            class="section-imeg"
+            src="./images/fish3.jpg"
+            alt="fish restaurant logo"
+          />
+          <h2 class="headlines">Ресторан <span lang="en">Seafood</span></h2>
+          <p class="section-text">Приложение</p>
         </li>
-        <li>
-          <img src="./images/headphones4.jpg" alt="headphones" />
-          <h2>Проект <span lang="en"> Prime</span></h2>
-          <p>Маркетинг</p>
+        <li class="section-blok">
+          <img
+            class="section-imeg"
+            src="./images/headphones4.jpg"
+            alt="headphones"
+          />
+          <h2 class="headlines">Проект <span lang="en"> Prime</span></h2>
+          <p class="section-text">Маркетинг</p>
         </li>
-        <li>
-          <img src="./images/boxes5.jpg" alt="two boxes" />
-          <h2>Проект <span lang="en"> Boxes</span></h2>
-          <p>Приложение</p>
+        <li class="section-blok">
+          <img class="section-imeg" src="./images/boxes5.jpg" alt="two boxes" />
+          <h2 class="headlines">Проект <span lang="en"> Boxes</span></h2>
+          <p class="section-text">Приложение</p>
         </li>
-        <li>
-          <img src="./images/monitor6.jpg" alt="monitor" />
-          <h2 lang="en">Inspiration has no Borders</h2>
-          <p>Веб-сайт</p>
+        <li class="section-blok extreme">
+          <img class="section-imeg" src="./images/monitor6.jpg" alt="monitor" />
+          <h2 lang="en" class="headlines">Inspiration has no Borders</h2>
+          <p class="section-text">Веб-сайт</p>
         </li>
-        <li>
-          <img src="./images/book7.jpg" alt="open book" />
-          <h2>Издание <span lang="en">Limited Edition</span>Limited Edition</h2>
-          <p>Дизайн</p>
+        <li class="section-blok">
+          <img class="section-imeg" src="./images/book7.jpg" alt="open book" />
+          <h2 class="headlines">
+            Издание <span lang="en">Limited Edition</span>Limited Edition
+          </h2>
+          <p class="section-text">Дизайн</p>
         </li>
-        <li>
-          <img src="./images/label8.jpg" alt="progect label " />
-          <h2>Проект <span lang="en"> LAB</span></h2>
-          <p>Маркетинг</p>
+        <li class="section-blok">
+          <img
+            class="section-imeg"
+            src="./images/label8.jpg"
+            alt="progect label "
+          />
+          <h2 class="headlines">Проект <span lang="en"> LAB</span></h2>
+          <p class="section-text">Маркетинг</p>
         </li>
-        <li>
-          <img src="./images/label9.jpg" alt="growing business" />
-          <h2 lang="en">Growing Business</h2>
-          <p>Приложение</p>
+        <li class="section-blok extreme">
+          <img
+            class="section-imeg"
+            src="./images/label9.jpg"
+            alt="growing business"
+          />
+          <h2 lang="en" class="headlines">Growing Business</h2>
+          <p class="section-text">Приложение</p>
         </li>
       </ul>
     </section>

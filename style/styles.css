@@ -100,7 +100,9 @@ body {
   color: #757575;
 }
 .mail .link:hover,
-.mail .link:focus {
+.mail .link:focus,
+.tel .link:hover,
+.tel .link:focus {
   color: var(--acsent-cololr);
 }
 /* .mail .link:focus {
@@ -228,11 +230,14 @@ body {
 .team-img {
   width: 270px;
   height: 368px;
-  padding-right: 30px;
+  margin-right: 30px;
   text-align: center;
   font-size: 16px;
   line-height: 1.19;
   background-color: var(--main-light);
+}
+.team-imeges .michael {
+  margin-right: 0;
 }
 
 .team-titel {

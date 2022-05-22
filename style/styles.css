@@ -90,24 +90,24 @@ body {
   padding-top: 32px;
   padding-bottom: 52px;
 }
+
+/* hover i focus */
 .list-site .link:hover,
 .list-site .link:focus,
-.list-site .link:active {
-  color: var(--acsent-cololr);
-}
-
-.mail a {
-  color: #757575;
-}
+.list-site .link:active,
+.address .link:hover,
+.address .link:focus,
 .mail .link:hover,
 .mail .link:focus,
 .tel .link:hover,
 .tel .link:focus {
   color: var(--acsent-cololr);
 }
-/* .mail .link:focus {
-  col or: var(--main-text-color);
-} */
+
+.mail a {
+  color: #757575;
+}
+
 .tel .link {
   padding-left: 50px;
   padding-right: 215px;

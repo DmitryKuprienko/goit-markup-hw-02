@@ -1,12 +1,9 @@
 /* перемение сайта*/
-* {
-  margin: 0;
-  padding: 0;
-}
+
 :root {
   /* текст */
-  --main-text: "Roboto", sans-serif;
-  --logo-text: "Raleway", sans-serif;
+  --main-text: 'Roboto', sans-serif;
+  --logo-text: 'Raleway', sans-serif;
   /* цвета текста */
   --main-text-color: #212121;
   --acsent-cololr: #2196f3;
@@ -18,22 +15,19 @@
   --background-light: #e5e5e5;
   --background-grey: #f5f4fa;
 }
-
-a {
-  text-decoration: none;
-  font-style: normal;
-}
 body {
   font-family: var(--main-text);
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
-  width: 1600px;
-  text-decoration: none;
+  letter-spacing: 0.03em;
+  background-color: var(--main-light);
 }
 
-.list {
+.list .link,
+.list .item {
   list-style: none;
+  text-decoration: none;
+  font-style: normal;
 }
 
 /* основной цвет #212121 */
@@ -42,16 +36,12 @@ body {
 /* основ голуб #2196F3 */
 /* вторичние цвет фона #2F303A */
 
-.shapka {
-  display: inline-flex;
-  background-color: var(--main-light);
-  text-decoration: none;
-}
+/* .shapka */
+
 /* навигатор сайта */
 
 /*логотип*/
-.shapka .loga {
-  padding: 25px 0 24px 215px;
+.logo {
   color: var(--main-text-color);
   font-family: var(--logo-text);
   font-weight: 700;
@@ -59,60 +49,40 @@ body {
   line-height: 1.19;
 }
 
-.page .loga-web {
+.logo-web {
   color: var(--acsent-cololr);
-}
-.nav {
-  font-weight: 500;
 }
 
 /* site-nav */
-.site-nav .link {
-  color: #212121;
-  padding-left: 50px;
+.nav.link,
+.contact.link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--main-text-color);
 }
-
-.list-site.studia {
-  padding-left: 93px;
+.contact.link {
+  color: var(--main-text-grey);
 }
 /* контакти */
 .cotacts.list {
-  display: inline-flex;
-  padding-left: 438px;
-  padding-top: 32px;
-  padding-bottom: 32px;
   font-weight: 500;
 }
-
-.site-nav {
-  display: inline-flex;
-  width: 294px;
-  padding-top: 32px;
-  padding-bottom: 52px;
-}
-
-/* hover i focus */
-.list-site .link:hover,
-.list-site .link:focus,
-.list-site .link:active,
-.address .link:hover,
-.address .link:focus,
-.mail .link:hover,
-.mail .link:focus,
-.tel .link:hover,
-.tel .link:focus {
+.nav.link.current {
   color: var(--acsent-cololr);
 }
 
-.mail a {
-  color: #757575;
+/* hover i focus */
+.nav .link:hover,
+.nav .link:focus,
+.nav .link:active,
+.footer-address .link:hover,
+.footer-address .link:focus,
+.contact.link:hover,
+.contact.link:focus {
+  color: var(--acsent-cololr);
 }
 
-.tel .link {
-  padding-left: 50px;
-  padding-right: 215px;
-  color: var(--main-text-grey);
-}
 /* section 1 */
 .section {
   background: var(--background-light);
@@ -121,12 +91,8 @@ body {
   background-color: var(--background-dark);
   height: 600px;
 }
-.section .titleh1 {
-  width: 696px;
-  height: 120px;
-  text-align: center;
-}
-.main .title {
+
+.main-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -165,20 +131,13 @@ body {
   overflow: hidden;
 }
 
-.description {
-  display: inline-flex;
-  width: 1170px;
-  height: 101px;
-  padding: 94px 215px;
-}
-
-.description .title {
-  font-weight: 700;
+.description.title {
   text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.14;
   padding-right: 30px;
 }
 .disc-text {
-  font-size: 14px;
   line-height: 1.71;
   color: var(--main-text-grey);
   padding-right: 30px;
@@ -187,7 +146,7 @@ body {
 }
 
 /* чем занимаемся */
-.titeleh2 {
+.section.titele {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -219,7 +178,7 @@ body {
 .team.titeleh2 {
   padding-top: 94px;
 }
-.list.team {
+.team.list {
   display: flex;
   padding: 0 215px 94px 215px;
 }
@@ -227,13 +186,11 @@ body {
 .team-imeges {
   height: 260px;
 }
-.team-img {
+.team.item {
   width: 270px;
   height: 368px;
   margin-right: 30px;
   text-align: center;
-  font-size: 16px;
-  line-height: 1.19;
   background-color: var(--main-light);
 }
 .team-imeges .michael {
@@ -244,6 +201,9 @@ body {
   font-weight: 500;
   padding-top: 30px;
   padding-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.19;
+
   color: var(--main-text-color);
 }
 .team-text {
@@ -256,7 +216,7 @@ body {
   height: 132px;
   padding: 60px 0 60px 215px;
 }
-.loga-footer {
+.logo-footer {
   font-family: var(--logo-text);
   color: var(--main-light);
   font-weight: 700;

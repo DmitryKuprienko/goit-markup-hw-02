@@ -97,9 +97,9 @@ body {
 }
 
 /* portfolio */
-.section {
+/* .section {
   background-color: var(--background-light);
-}
+} */
 
 .button {
   text-align: center;
@@ -117,6 +117,10 @@ body {
 .btn:hover,
 .btn:focus,
 .btn:active {
+  background-color: var(--acsent-cololr);
+  color: var(--main-light);
+}
+.btn.activ {
   background-color: var(--acsent-cololr);
   color: var(--main-light);
 }
@@ -141,7 +145,7 @@ body {
 .item-title {
   width: 322px;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 2;
 }
 /* text */

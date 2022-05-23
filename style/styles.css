@@ -84,9 +84,9 @@ body {
 }
 
 /* section 1 */
-.section {
+/* .section {
   background: var(--background-light);
-}
+} */
 .section.main {
   background-color: var(--background-dark);
   height: 600px;
@@ -155,7 +155,7 @@ body {
 }
 .what-doing {
   text-align: center;
-  background-color: var(--background-light);
+  /* background-color: var(--background-light); */
 }
 .what-doing .list {
   display: flex;
@@ -172,9 +172,9 @@ body {
   padding-right: 30px;
 }
 /* Наша команда */
-.section.team {
+/* .section.team {
   background-color: var(--background-grey);
-}
+} */
 .team.titeleh2 {
   padding-top: 94px;
 }
